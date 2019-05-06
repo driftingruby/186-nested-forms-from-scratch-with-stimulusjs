@@ -1,0 +1,9 @@
+<div class='nested-fields'>
+  <div class='form-group'>
+    <%= form.hidden_field :_destroy %>
+    <%= form.text_field :description, placeholder: 'Description', class: 'form-control' %>
+    <small>
+      <%= link_to "Remove", "#", data: { action: "click->nested-form#remove_association" } %>
+    </small>
+  </div>
+</div>
